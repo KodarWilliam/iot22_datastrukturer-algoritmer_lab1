@@ -48,6 +48,7 @@ class Storage:
         data = self.head.data
         self.head = self.head.next
 
+        self.size -= 1
         return data
 
     def peek(self):
